@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>All Products</h2>
+
+    <div class="products">
+        {% for p in products %}
+            <div class="card">
+                <img src="{{ p.image }}" alt="{{ p.title }}">
+                <h3>{{ p.title }}</h3>
+                <p><strong>Price:</strong> ${{ p.price }}</p>
+                <p><strong>Category:</strong> {{ p.category }}</p>
+                <a class="btn" href="{{ url_for('add_favorite', product_id=p.id) }}">Add to Favorites</a>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

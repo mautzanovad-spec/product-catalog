@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8f4f6;
+    color: #4b3f44;
+}
+
+header {
+    background: linear-gradient(90deg, #d8c3d8, #c9d9eb, #f3d6d0);
+    padding: 22px 40px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav h1 {
+    margin: 0;
+    font-size: 40px;
+    color: #5c4b51;
+}
+
+.nav-links {
+    display: flex;
+    gap: 18px;
+}
+
+.nav a {
+    color: #5c4b51;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 14px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    background: rgba(255, 255, 255, 0.45);
+}
+
+.container {
+    max-width: 1250px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+    color: #6b5960;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 24px;
+}
+
+.card {
+    background: #fffafc;
+    border-radius: 22px;
+    padding: 20px;
+    box-shadow: 0 6px 18px rgba(167, 144, 160, 0.12);
+    text-align: center;
+    transition: 0.3s ease;
+    border: 1px solid #f0e3e8;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(167, 144, 160, 0.18);
+}
+
+.card img {
+    width: 140px;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 14px;
+}
+
+.card h3 {
+    font-size: 18px;
+    min-height: 58px;
+    color: #5e4d54;
+    margin-bottom: 14px;
+    overflow: hidden;
+}
+
+.card p {
+    margin: 7px 0;
+    font-size: 15px;
+    color: #6d5b63;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 16px;
+    background: #d6b8c9;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+    border: none;
+}
+
+.btn:hover {
+    background: #caa8bb;
+}
+
+.delete-btn {
+    background: #e7b6b6;
+}
+
+.delete-btn:hover {
+    background: #d99f9f;
+}
